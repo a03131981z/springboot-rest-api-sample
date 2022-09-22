@@ -60,7 +60,7 @@ public class GreetingsController {
     @ResponseBody/*Descrição da resposta*/
     public ResponseEntity<Usuario> salvar(@RequestBody Usuario usuario){/*recebe os dados para salvar*/
     	Usuario user = usuarioRepository.save(usuario);
-    	return new ResponseEntity<Usuario>(user, HttpStatus.CREATED); 	
+    	return new ResponseEntity<Usuario>(user, HttpStatus.CREATED);
     }
     
     @PutMapping(value = "atualizar")//mapeia a url
